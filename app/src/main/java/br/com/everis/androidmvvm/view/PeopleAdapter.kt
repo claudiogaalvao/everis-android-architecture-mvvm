@@ -1,13 +1,14 @@
-package br.com.everis.androidmvvm
+package br.com.everis.androidmvvm.view
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import br.com.everis.androidmvvm.R
 import br.com.everis.androidmvvm.infrastructure.network.model.People
 import kotlinx.android.synthetic.main.people_item.view.*
 
-//TODO: 3 - Mover esta classe para o package view
+//DONE: 3 - Mover esta classe para o package view
 class PeopleAdapter : RecyclerView.Adapter<PeopleAdapter.ViewHolder>() {
 
     private val peoples = mutableListOf<People>()
