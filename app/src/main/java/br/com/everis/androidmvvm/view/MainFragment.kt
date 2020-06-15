@@ -65,6 +65,8 @@ class MainFragment : Fragment() {
         super.onDestroy()
 
         //????: 7 - Remova os observables das variaveis viewModel.peoples e viewModel.errorMessage
+        viewModel.peoples.removeObserver{ }
+        viewModel.errorMessage.removeObserver{ }
 
         //DONE: 8 - Remova esta linha, não será mais necessária
     }
